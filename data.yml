@@ -1,4 +1,4 @@
-defaultStorageMapping: SRC
+defaultStorageMapping: STAGE
 jobs: {}
 locations:
   DV:
@@ -464,7 +464,7 @@ stepTypes:
     id: "1"
     isDisabled: false
     metadata:
-      defaultStorageLocation: null
+      defaultStorageLocation: STAGE
       error: null
       nodeMetadataSpec: |-
         capitalized: 'DATAVAULT BY SCALEFREE: STAGE'
@@ -602,7 +602,7 @@ stepTypes:
     id: "2"
     isDisabled: false
     metadata:
-      defaultStorageLocation: null
+      defaultStorageLocation: DV
       error: null
       nodeMetadataSpec: |-
         capitalized: 'DATAVAULT BY SCALEFREE: HUB'
@@ -719,7 +719,7 @@ stepTypes:
     id: "3"
     isDisabled: false
     metadata:
-      defaultStorageLocation: null
+      defaultStorageLocation: DV
       error: null
       nodeMetadataSpec: |-
         capitalized: 'DATAVAULT BY SCALEFREE: LINK'
@@ -826,7 +826,7 @@ stepTypes:
     id: "4"
     isDisabled: false
     metadata:
-      defaultStorageLocation: null
+      defaultStorageLocation: DV
       error: null
       nodeMetadataSpec: |-
         capitalized: 'DATAVAULT BY SCALEFREE: SATELLITE V0'
@@ -950,7 +950,7 @@ stepTypes:
     id: "5"
     isDisabled: false
     metadata:
-      defaultStorageLocation: null
+      defaultStorageLocation: DV
       error: null
       nodeMetadataSpec: |-
         capitalized: 'DATAVAULT BY SCALEFREE: SATELLITE V1'
@@ -1041,7 +1041,7 @@ stepTypes:
     id: "6"
     isDisabled: false
     metadata:
-      defaultStorageLocation: null
+      defaultStorageLocation: DV
       error: null
       nodeMetadataSpec: |-
         capitalized: 'DATAVAULT BY SCALEFREE: PIT'
@@ -1204,7 +1204,7 @@ stepTypes:
     id: "7"
     isDisabled: false
     metadata:
-      defaultStorageLocation: null
+      defaultStorageLocation: DV
       error: null
       nodeMetadataSpec: |-
         capitalized: 'DATAVAULT BY SCALEFREE: SNAPSHOT V0'
@@ -1399,7 +1399,7 @@ stepTypes:
     id: "8"
     isDisabled: false
     metadata:
-      defaultStorageLocation: null
+      defaultStorageLocation: DV
       error: null
       nodeMetadataSpec: |-
         capitalized: 'DATAVAULT BY SCALEFREE: SNAPSHOT V1'
@@ -1811,7 +1811,7 @@ stepTypes:
     id: Dimension
     isDisabled: false
     metadata:
-      defaultStorageLocation: null
+      defaultStorageLocation: MART
       error: null
       nodeMetadataSpec: |-
         capitalized: Dimension
@@ -2258,7 +2258,7 @@ stepTypes:
     id: Fact
     isDisabled: false
     metadata:
-      defaultStorageLocation: null
+      defaultStorageLocation: MART
       error: null
       nodeMetadataSpec: |
         capitalized: Fact
@@ -2995,7 +2995,7 @@ stepTypes:
     id: Stage
     isDisabled: false
     metadata:
-      defaultStorageLocation: null
+      defaultStorageLocation: STAGE
       error: null
       nodeMetadataSpec: |
         capitalized: Stage
@@ -3200,7 +3200,7 @@ stepTypes:
     id: View
     isDisabled: false
     metadata:
-      defaultStorageLocation: null
+      defaultStorageLocation: STAGE
       error: null
       nodeMetadataSpec: |
         capitalized: View
@@ -3280,7 +3280,7 @@ stepTypes:
     id: persistentStage
     isDisabled: false
     metadata:
-      defaultStorageLocation: null
+      defaultStorageLocation: STAGE
       error: null
       nodeMetadataSpec: |
         capitalized: Persistent Stage
