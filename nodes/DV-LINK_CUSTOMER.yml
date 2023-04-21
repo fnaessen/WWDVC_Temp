@@ -1,0 +1,109 @@
+steps:
+  LINK_CUSTOMER-6cd29a33-7b03-4132-89c7-48b36186031b:
+    operation:
+      config:
+        postSQL: ""
+        preSQL: ""
+      database: ""
+      dependencies: []
+      deployEnabled: true
+      description: Customer data as defined by TPC-H
+      isDataVault: false
+      isMultisource: false
+      locationID: ""
+      locationName: DV
+      materializationType: table
+      metadata:
+        appliedNodeTests: []
+        columns:
+          - columnReference:
+              columnCounter: 5c4d2648-5ca9-40a5-9115-6a4218a42c45
+              stepCounter: 6cd29a33-7b03-4132-89c7-48b36186031b
+            config: {}
+            dataType: STRING
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: HK_CUSTOMER_H
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: d5af7bff-18c4-4238-b7b1-741b9daec5c9
+                    stepCounter: 83961fb4-9a5b-480a-9df3-7f983d045f13
+                transform: ""
+          - columnReference:
+              columnCounter: 9843fbe6-25f7-4fca-9ea7-4af8e1ff92e6
+              stepCounter: 6cd29a33-7b03-4132-89c7-48b36186031b
+            dataType: STRING
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: HK_NATION_H
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 3fb6708c-7976-4314-b815-3be03fe2fd16
+                    stepCounter: 83961fb4-9a5b-480a-9df3-7f983d045f13
+                transform: ""
+          - columnReference:
+              columnCounter: 228d9482-645f-46fd-a0d9-916e97160b8a
+              stepCounter: 6cd29a33-7b03-4132-89c7-48b36186031b
+            config:
+              is_Link_hk: true
+            dataType: STRING
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: HK_CUSTOMER_NATION_L
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 3026907b-0267-44c2-8f81-3cfc139b4e1b
+                    stepCounter: 83961fb4-9a5b-480a-9df3-7f983d045f13
+                transform: ""
+          - columnReference:
+              columnCounter: 19ad9c64-dd1d-4c76-bf87-b16dfacab007
+              stepCounter: 6cd29a33-7b03-4132-89c7-48b36186031b
+            dataType: TIMESTAMP
+            description: The Load Date Timestamp (LDTS) describes when this data first arrived in the Data Warehouse.
+            hashColumns: []
+            hashDetails: null
+            name: LDTS
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 246037f3-f6a1-4117-88fb-d86a3a451ee2
+                    stepCounter: 83961fb4-9a5b-480a-9df3-7f983d045f13
+                transform: ""
+          - columnReference:
+              columnCounter: 3ef4397a-7efc-4e9e-a534-649fba20c609
+              stepCounter: 6cd29a33-7b03-4132-89c7-48b36186031b
+            dataType: STRING
+            description: The Record Source (RSRC) describes the source of this data.
+            hashColumns: []
+            hashDetails: null
+            name: RSRC
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 96a7e122-1dc8-498b-a243-e85ac1dfcebc
+                    stepCounter: 83961fb4-9a5b-480a-9df3-7f983d045f13
+                transform: ""
+        cteString: ""
+        enabledColumnTestIDs: []
+        sourceMapping:
+          - customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: STAGE
+                nodeName: DVSTG_CUSTOMER
+            join:
+              joinCondition: FROM {{ ref('STAGE', 'DVSTG_CUSTOMER') }} "DVSTG_CUSTOMER"
+            name: LINK_CUSTOMER
+            noLinkRefs: []
+      name: LINK_CUSTOMER
+      overrideSQL: false
+      schema: ""
+      sqlType: "3"
+      type: sql
+    stepCounter: 6cd29a33-7b03-4132-89c7-48b36186031b
